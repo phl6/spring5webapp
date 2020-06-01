@@ -15,7 +15,7 @@ public class Book {
     private String title;
     private String isbn;
 
-    @ManyToOne
+    @ManyToOne //Many Publishers to one book
     private Publisher publisher;
 
     //author_book holds the relationship between 1. records and the author table and; 2. records and the book table

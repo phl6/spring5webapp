@@ -18,7 +18,7 @@ public class Publisher {
     private String state;
     private String zip;
 
-    @OneToMany
+    @OneToMany //One publisher has many books
     @JoinColumn(name= "publisher_id") //works as a foreign key, giving hibernate a hint to add in a publisher id to the book record to track the publisher
     private Set<Book> books = new HashSet<>();
 
